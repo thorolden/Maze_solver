@@ -30,7 +30,7 @@ void AMazeGenerator::GenerateMaze()
     TArray<TArray<int32>> Maze;
     GenerateMazeData(Maze);
 
-    MazeData = Maze; // обязательно!
+    MazeData = Maze; 
 
     // Spawn meshes
     SpawnMazeMeshes(Maze);
