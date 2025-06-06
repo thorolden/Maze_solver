@@ -1,0 +1,46 @@
+# Top-most EditorConfig file
+root = true
+
+# Unreal Engine 5 C++ files
+[*.{h,cpp,inl}]
+indent_style = space
+indent_size = 4
+tab_width = 4
+insert_final_newline = true
+charset = utf-8
+end_of_line = lf
+trim_trailing_whitespace = true
+
+# UE5 naming conventions (not enforced by all editors, but for reference)
+# Classes: PascalCase, prefixed with 'U', 'A', 'F', 'E', or 'I' as appropriate
+# Variables: camelCase or PascalCase, member variables prefixed with 'b' for booleans, 'My' for others
+# Constants: ALL_CAPS with underscores
+
+# C# files (for .NET 8 projects)
+[*.cs]
+indent_style = space
+indent_size = 4
+tab_width = 4
+insert_final_newline = true
+charset = utf-8
+end_of_line = crlf
+trim_trailing_whitespace = true
+
+# JSON files
+[*.json]
+indent_style = space
+indent_size = 2
+
+# XML files
+[*.xml]
+indent_style = space
+indent_size = 2
+
+# Ignore intermediate and build folders
+[Intermediate/**]
+trim_trailing_whitespace = false
+insert_final_newline = false
+
+[Build/**]
+trim_trailing_whitespace = false
+insert_final_newline = false
